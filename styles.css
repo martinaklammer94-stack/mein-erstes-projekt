@@ -53,3 +53,9 @@ nav a {
 .submenu a {
   color: white;
 }
+
+img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
