@@ -49,13 +49,26 @@
 
       <form method="post">
         <label>Name:</label>
-        <input type="text" name="name" /> <br />
+        <input type="text" name="name" placeholder="Name eingeben" /> <br />
         <label>Email:</label>
-        <input type="email" name="email" required /> <br />
+        <input
+          type="email"
+          name="email"
+          required
+          placeholder="Email eingeben"
+        />
+        <br />
         <label>Betreff:</label>
-        <input type="text" name="betreff" /> <br />
+        <input type="text" name="betreff" placeholder="Betreff eingeben" />
+        <br />
         <label>Nachricht:</label>
-        <textarea rows="10" name="nachricht" required></textarea> <br />
+        <textarea
+          rows="10"
+          name="nachricht"
+          required
+          placeholder="Nachricht eingeben"
+        ></textarea>
+        <br />
         <button type="submit">Jetzt abschicken!</button>
       </form>
     </main>
