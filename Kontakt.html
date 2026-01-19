@@ -47,10 +47,10 @@
         <p>Nehmen Sie gerne Kontakt auf.</p>
       </section>
 
-      <form method="post">
+      <form id="contact-form" method="post">
         <div class="form-row">
           <label>Name:</label>
-          <input type="text" name="name" placeholder="Name eingeben" /> <br />
+          <input type="text" name="name" placeholder="Name eingeben" />
         </div>
 
         <div class="form-row">
@@ -61,13 +61,11 @@
             required
             placeholder="Email eingeben"
           />
-          <br />
         </div>
 
         <div class="form-row">
           <label>Betreff:</label>
           <input type="text" name="betreff" placeholder="Betreff eingeben" />
-          <br />
         </div>
 
         <div class="form-row">
@@ -78,10 +76,10 @@
             required
             placeholder="Nachricht eingeben"
           ></textarea>
-          <br />
         </div>
 
         <button type="submit">Jetzt abschicken!</button>
+        <p id="success-message"></p>
       </form>
     </main>
 
@@ -94,6 +92,18 @@
         </ul>
       </nav>
     </footer>
+
+    <script>
+      const form = document.getElementById("contact-form");
+      const successMessage = document.getElementById("success-message");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        successMessage.textContent = "Vielen Dank für Ihre Nachricht!";
+        successMessage.style.display = "block";
+      });
+    </script>
   </body>
 </html>
 >

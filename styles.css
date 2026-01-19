@@ -68,6 +68,7 @@ form {
 label {
   display: block;
   margin-top: 1rem;
+  width: 100px;
 }
 
 input {
@@ -83,6 +84,7 @@ input,
 textarea {
   font-family: inherit;
   font-size: 1rem;
+  flex: 1;
 }
 
 input::placeholder,
@@ -94,13 +96,8 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  align-self: flex-start;
 }
-.form-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-}
-
 
 button {
   background-color: violet;
@@ -116,6 +113,12 @@ button {
 
 button:hover {
   background-color: purple;
+}
+
+#success-message {
+  margin-top: 1rem;
+  color: green;
+  font-weight: bold;
 }
 
 
