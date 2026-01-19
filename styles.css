@@ -83,7 +83,22 @@ input,
 textarea {
   font-family: inherit;
   font-size: 1rem;
-  font-style: italic;
+}
+
+input::placeholder,
+textarea::placeholder {
+  opacity: 0.6;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
 
